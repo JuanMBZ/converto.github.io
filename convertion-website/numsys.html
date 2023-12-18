@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Converto</title>
+        <!-- Link to favicon and css file-->
+        <link href="styles/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <!-- Linking the font open sans from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- Link to jquery(a module for readable code) and to main script -->
+        <script src="scripts/jquery-3.7.1.min.js"></script>
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <!-- Navigation bar section-->
+        <div class="navbar">
+            <h1>Converto</h1>
+            <a class="info" href="index.html"><strong>HOME</strong></a>
+            <a href="length.html"><strong>Length</strong></a>
+            <a href="temp.html"><strong>Temperature</strong></a>
+            <a href="weight.html"><strong>Weight</strong></a>
+            <a href="numsys.html"><strong>Number System</strong></a>
+            <a class="info" href="about.html"><strong>ABOUT</strong></a>
+        </div>
+        <!-- Main body section of Length Conversion-->
+        <div class="main">
+            <!-- Header with icon next to it (in class "header")-->
+            <div class="header">
+                <img src="images/numsys.png" alt="Number Systems icon" />
+                <h1><u>NUMBER SYSTEMS</u> Conversion</h1>
+            </div>
+            <!-- Description for number systems -->
+            <p>
+                A number system is defined as a system of writing to express numbers. It is the mathematical notation for representing numbers of a given set by using digits or other symbols in a consistent manner. <br/>
+                The four most common number system types are: Decimal (base-10), Binary (base-2), Octal (base-8), and Hexadecimal (base-16)
+            </p>
+
+            <!-- Decimal to Binary -->
+            <p>
+                Convert <u>decimal</u> to <u>binary</u>.
+            </p>
+            <div>
+                <input type="number" value="0" class="numsys" id="decimal1"/> <span>Decimal</span>
+            </div>
+            <div>
+                <input type="number" readonly value="0"  id="binary"/> <span>Binary</span>
+            </div>
+
+            <!-- Decimal to Octal -->
+            <p>
+                Convert <u>decimal</u> to <u>octal</u>.
+            </p>
+            <div>
+                <input type="number" value="0" class="numsys" id="decimal2"/> <span>Decimal</span>
+            </div>
+            <div>
+                <input type="number" readonly value="0"  id="octal"/> <span>Octal</span>
+            </div>
+
+            <!-- Decimal to Hexadecimal -->
+            <p>
+                Convert <u>decimal</u> to <u>hexadecimal</u>.
+            </p>
+            <div>
+                <input type="number" value="0" class="numsys" id="decimal3"/> <span>Decimal</span>
+            </div>
+            <div>
+                <input type="text" readonly value="0"  id="hexadecimal"/> <span>Hexadecimal</span>
+            </div>
+        </div>
+    </body>
+</html>

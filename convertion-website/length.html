@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Converto</title>
+        <!-- Link to favicon and css file-->
+        <link href="styles/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <!-- Linking the font open sans from google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- Link to jquery(a module for readable code) and to main script -->
+        <script src="scripts/jquery-3.7.1.min.js"></script>
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <!-- Navigation bar section-->
+        <div class="navbar">
+            <h1>Converto</h1>
+            <a class="info" href="index.html"><strong>HOME</strong></a>
+            <a href="length.html"><strong>Length</strong></a>
+            <a href="temp.html"><strong>Temperature</strong></a>
+            <a href="weight.html"><strong>Weight</strong></a>
+            <a href="numsys.html"><strong>Number System</strong></a>
+            <a class="info" href="about.html"><strong>ABOUT</strong></a>
+        </div>
+        <!-- Main body section of Length Conversion-->
+        <div class="main">
+            <!-- Header with icon next to it (in class "header")-->
+            <div class="header">
+                <img src="images/ruler.png" alt="Ruler icon" />
+                <h1><u>LENGTH</u> Conversion</h1>
+            </div>
+            <!-- Short descript of  length-->
+            <p>
+                Length is a measurement, which identifies the distance between two points. It also measures how long an object is, its height and its width. <br/>
+                The two main systems used for measuring length are the imperial and the metric system.
+            </p>
+            <!-- Centimeters to Inches -->
+            <p>
+                Convert <u>centimeters</u> to <u>inches</u>.
+            </p>
+            <!-- Input -->
+            <div>
+                <input type="number" value="0" class="length" id="length_cm"/> <span>Centimeters</span>
+            </div>
+            <div>
+                <input type="number" readonly value="0"  id="length_in"/> <span>Inches</span>
+            </div>
+
+            <!-- Meters to Yards -->
+            <p>
+                Convert <u>meters</u> to <u>yards</u>.
+            </p>
+            <!-- Input -->
+            <div>
+                <input type="number" value="0" class="length" id="length_m"/> <span>Meters</span>
+            </div>
+            <div>
+                <input type="number" readonly value="0"  id="length_yd"/> <span>Yards</span>
+            </div>
+
+            <!-- Kilometers to Miles -->
+            <p>
+                Convert <u>Kilometers</u> to <u>miles</u>.
+            </p>
+            <!-- Input -->
+            <div>
+                <input type="number" value="0" class="length" id="length_km"/> <span>Kilometers</span>
+            </div>
+            <div>
+                <input type="number" readonly value="0"  id="length_mi"/> <span>Miles</span>
+            </div>
+        </div>
+    </body>
+</html>
